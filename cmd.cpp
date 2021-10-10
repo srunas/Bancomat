@@ -1,18 +1,16 @@
 ﻿#include <iostream>
-
 using namespace std;
-
 int main()
 {
 	setlocale(LC_ALL, "Russian");
 int number = 0;
-cout << "Введите число от 1 до 9999: ";
+cout << "Введите число от (1 до 9999): ";
 cin >> number;
 cout << endl;
 
 if (number < 1 || number > 9999)
 {
-	cout << "Число не входит в диапазон от 1 до 9999!" << endl;
+	cout << "Вы ввели неправильное число, попробуйте еще раз :D" << endl;
 }
 else
 {
@@ -89,8 +87,6 @@ else
 	{
 		cout << "девятьсот ";
 	}
-
-
 	if ((number / 10) % 10 == 1)
 	{
 		if (number % 10 == 0)
@@ -212,7 +208,6 @@ else
 	}
 	cout << endl;
 }
-
 cout << endl;
 system("pause");
 return 0;
